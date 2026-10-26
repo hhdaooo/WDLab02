@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="BÍA CLUB - website thương mại điện tử thực hành HTML thuần; không dùng CSS hoặc JavaScript.">
+ <title>Đặt hàng mẫu | BÍA CLUB</title>
+</head>
+<body bgcolor="#FAF5FF" text="#152B49" link="#0759B8" vlink="#614DB6" alink="#F07421">
+    <a href="#noi-dung">Bỏ qua menu, đến nội dung chính</a>
+    <header>
+        <table width="100%" border="0" cellpadding="15" cellspacing="0" bgcolor="#171038">
+            <tr>
+                <td align="center">
+                    <font color="#FFFFFF" size="7"><b><img src="images/icons8-star-30.png" alt="icon ngôi sao"> BÍA CLUB <img src="images/icons8-star-30.png" alt="icon ngôi sao"> </b></font><br>
+                    <font color="#FCD584" size="4">REP YOUR BIAS · OWN YOUR STYLE</font><br>
+                    <font color="#FFFFFF" size="2">Custom your favorite</font>
+                </td>
+            </tr>
+        </table>
+        <table width="100%" border="0" cellpadding="12" cellspacing="0" bgcolor="#E6DCF9">
+            <tr>
+                <td align="center"><nav aria-label="Điều hướng chính"><a href="index.html">⌂ Trang chủ</a> &nbsp; | &nbsp; <a href="index.html#san-pham">◈ Sản phẩm</a> &nbsp; | &nbsp; <a href="chi-tiet.html">▤ Chi tiết</a> &nbsp; | &nbsp; <a href="bang-gia.html">▦ Bảng tổng hợp</a> &nbsp; | &nbsp; <a href="dat-hang.html">✉ Đặt hàng mẫu</a></nav></td>
+            </tr>
+        </table>
+    </header>
+
+    <main id="noi-dung">
+        <table width="100%" border="0" cellpadding="16" cellspacing="0" bgcolor="#FFF2DC">
+            <tr>
+                <td><h1>✉ FORM ĐẶT HÀNG</h1></td>
+            </tr>
+        </table>
+        <table width="100%" cellpadding="15" cellspacing="8" border="0">
+            <tr>
+                <td bgcolor="#FFFFFF" valign="top" width="65%"><h2>Thông tin đặt hàng mẫu</h2>
+                    <form action="xac-nhan.html" method="get">
+                        <fieldset><legend>Thông tin người đặt</legend>
+                            <p>
+                                <label for="ten">Họ tên *</label>
+                                <br/>
+                                <input autocomplete="name" id="ten" maxlength="60" minlength="2" name="hoTen" placeholder="Nguyen Van A" required="" type="text"/>
+                            </p>
+                            <p>
+                                <label for="email">Email *</label>
+                                <br/>
+                                <input autocomplete="email" id="email" name="email" placeholder="demo@example.com" required="" type="email"/>
+                            </p>
+                            <p>
+                                <label for="phone">Điện thoại </label>
+                                <br/>
+                                <input id="phone" name="phone" placeholder="0900000000" type="tel"/>
+                            </p>
+                        </fieldset>
+                        <fieldset><legend>Chi tiết sản phẩm</legend>
+                            <p>
+                                <label for="product">Sản phẩm *</label>
+                                <br/>
+                                <select id="product" name="maSanPham" required="">
+                                    <option value="">-- Chọn sản phẩm --</option>
+                                    <option value="SS03">SS03 · Shirt - Together We Shine 3 (600.000 đ)</option>
+                                    <option value="TS04">TS04 · T-Shirt - Stardust (449.000 đ)</option>
+                                    <option value="CP01">CP01 · Cap - Together We Shine 1 (200.000 đ)</option>
+                                    <option value="JS01">JS01 · Jersey - Together We Shine 1 (500.000 đ)</option>
+                                    <option value="LC02">LC02 · Lanyard & Cardholder - Together We Shine 2 (99.000 đ)</option>
+                                    <option value="JK03">JK03 · Jacket - Together We Shine 3 (700.000 đ)</option>
+                                    <option value="BD05">BD05 · Bandana - Eclipse (299.000 đ)</option>
+                                    <option value="BT04">BT04 · Babytee - Stardust (390.000 đ)</option>
+                                    <option value="TS03">TS03 · T-Shirt - Together We Shine 3 (450.000 đ)</option>
+                                    <option value="BD02">BD02 · Bandana - Together We Shine 2 (200.000 đ)</option>
+                                    <option value="TB01">TB01 · Tote Bag - Together We Shine 1 (350.000 đ)</option>
+                                    <option value="TS02">TS02 · T-Shirt - Together We Shine 2 (499.000 đ)</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="color">Màu sắc</label>
+                                <br/>
+                                <select id="color" name="color">
+                                    <option value="">-- Chọn màu sắc --</option>
+                                    <option value="white">Trắng</option>
+                                    <option value="black">Đen</option>
+                                    <option value="blue">Xanh</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="size">Size (Nếu lựa chọn sản phẩm quần/áo)</label>
+                                <br/>
+                                <select id="size" name="size">
+                                    <option value="">-- Chọn size --</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="quantity">Số lượng (1-5)</label>
+                                <br/>
+                                <input id="quantity" max="5" min="1" name="soLuong" required="" step="1" type="number" value="1"/>
+                            </p>
+                            <fieldset><legend>Hình thức nhận hàng</legend>
+                                <label>
+                                    <input name="giaoHang" required="" type="radio" value="tai-cua-hang"/> Nhận tại cửa hàng
+                                </label>
+                                <br/>
+                                <label>
+                                    <input name="giaoHang" type="radio" value="giao-tan-noi"/> Giao tận nơi
+                                </label>
+                            </fieldset>
+                            <p><label for="note">Ghi chú</label><br/><textarea cols="40" id="note" maxlength="300" name="ghiChu" placeholder="Ghi chú đơn hàng (không bắt buộc)" rows="4"></textarea></p>
+                        </fieldset>
+                        <p>
+                            <label>
+                                <input name="dongY" required="" type="checkbox" value="yes"/> Tôi hiểu đây chỉ là form thực hành, không tạo đơn hàng thật *
+                            </label>
+                        </p>
+                        <button type="submit">Gửi yêu cầu mẫu</button>
+                        <button type="reset">Nhập lại</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <footer><hr>
+        <table bgcolor="#123A69" width="100%" cellpadding="16" cellspacing="0" border="0">
+            <tr>
+                <td align="center"><font color="white"><b>◆ BÍA CLUB</b> · 12 sản phẩm demo · © 2026</font><br><font color="#FFDC91">Dữ liệu, giá bán và đơn hàng đều mang tính minh họa phục vụ học tập.</font><br><a href="index.html">↥ Quay lại trang chủ</a></td>
+            </tr>
+        </table>
+    </footer>
+</body></html>
